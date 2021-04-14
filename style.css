@@ -12,6 +12,7 @@
 
 .prompt {
   overflow: hidden;
+  overflow-y: scroll;
   height: 20px;
 }
 
