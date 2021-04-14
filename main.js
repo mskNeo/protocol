@@ -1,9 +1,9 @@
-const canvas = document.querySelector("canvas");
+const canvas = document.querySelector("#canvas");
 const ctx = canvas.getContext("2d");
 let coord = { x: 0, y: 0 };
 
-document.addEventListener("mousedown", start);
-document.addEventListener("mouseup", stop);
+canvas.addEventListener("mousedown", start);
+canvas.addEventListener("mouseup", stop);
 window.addEventListener("resize", resize);
 
 function resize() {
@@ -19,8 +19,8 @@ function start(event) {
 }
 
 function reposition(event) {
-  coord.x = event.clientX + 50;
-  coord.y = event.clientY + 50;
+  coord.x = (event.pageX + canvas.offsetLeft);
+  coord.y = (event.pageY + canvas.offsetTop);
 }
 
 function stop() {
