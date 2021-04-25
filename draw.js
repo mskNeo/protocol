@@ -63,9 +63,9 @@ function draw(event) {
   ctx.stroke();
 }
 
-<<<<<<< Updated upstream
+
 btn.addEventListener('click', () => {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 });
-=======
->>>>>>> Stashed changes
+
+
