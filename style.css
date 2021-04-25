@@ -34,6 +34,7 @@ button {
   border: transparent;
   transition-duration: 300ms;
   font-size: 1.1em;
+  background-color: rgb( 220, 222, 222 );
 }
 
 button:focus {
