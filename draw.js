@@ -1,9 +1,12 @@
 const canvas = document.querySelector("#canvas");
-const btn = document.querySelector("button");
+const clear = document.querySelector("#clear");
+const rainbow = document.querySelector("#rainbow");
 const ctx = canvas.getContext("2d");
 let coord = { x: 0, y: 0 };
 
-var crazyRainbowOn = false;
+let crazyRainbowOn = false;
+
+
 
 canvas.addEventListener("mousedown", start);
 canvas.addEventListener("mouseup", stop);
@@ -17,7 +20,6 @@ function resize() {
 resize();
 
 function start(event) {
-  console.log('hi');
   document.addEventListener("mousemove", draw);
   reposition(event);
   
@@ -63,6 +65,15 @@ function draw(event) {
   ctx.stroke();
 }
 
-btn.addEventListener('click', () => {
+clear.addEventListener('click', () => {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
+});
+
+rainbow.addEventListener('click', () => {
+  crazyRainbowOn = !crazyRainbowOn;
+  if (crazyRainbowOn) {
+    rainbow.textContent = 'Crazy Rainbow!';
+  } else {
+    rainbow.textContent = 'Crazy Rainbow?';
+  }
 });

@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   height: 100px;
   width: 100%;
-  background: white;
+  background: rgb( 220, 222, 222 );
   justify-content: space-between;
 }
 
@@ -27,8 +27,6 @@ body {
 
 button {
   position: fixed;
-  right: 10px;
-  top: 10;
   min-height: 50px;
   width: 200px;
   border: transparent;
@@ -46,7 +44,17 @@ button:hover {
   color: whitesmoke;
 }
 
-button:before {
+#clear {
+  right: 25px;
+  top: 25px;
+}
+
+#rainbow {
+  right: 250px;
+  top: 25px;
+}
+
+#clear:before {
   content: "";
   position: absolute;
   background: #383736;
@@ -58,8 +66,24 @@ button:before {
   transition: top 0.3s ease;
 }
 
-button:hover:before {
+#clear:hover:before {
   top: 0;
+}
+
+#rainbow:before {
+  content: '';
+  position: absolute;
+  background: linear-gradient(red,orange,yellow,green,blue,indigo,violet);
+  top: 0;
+  left: 0;
+  right: 100%;
+  bottom: 0%;
+  z-index: -1;
+  transition: right 0.3s ease;
+}
+
+#rainbow:hover:before {
+  right: 0;
 }
 
 canvas {
