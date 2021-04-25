@@ -14,6 +14,7 @@ function resize() {
 resize();
 
 function start(event) {
+  console.log('hi');
   document.addEventListener("mousemove", draw);
   reposition(event);
 }
@@ -30,7 +31,7 @@ function stop() {
 function draw(event) {
   ctx.beginPath();
   ctx.lineWidth = 5;
-  ctx.lineCap = "round";m
+  ctx.lineCap = "round";
   ctx.strokeStyle = "#ACD3ED";
   ctx.moveTo(coord.x, coord.y);
   reposition(event);
