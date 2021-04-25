@@ -1,11 +1,11 @@
 
 const prompts = [
-  "Prompt 1",
-  "Prompt 2",
-  "Prompt 3",
-  "Prompt 4",
-  "Prompt 5",
-  "Prompt 6",
+  "Draw a dream you had recently. (Please nothing explicit, thank you)",
+  "Go outside and walk for 10 minutes. Draw your pathing. (Don't die on your walk, we are not liable for that so don't take us to court)",
+  "Draw how you feel when you listen to your favorite song. (Only crying emojis is acceptable)",
+  "Go to Google Maps and go to 23.708443, 90.405792. Draw what you see.",
+  "Draw your favorite childhood memory. (or food if that's your personality, in which case, respect.)",
+  "Write (or draw if you're into that kind of thing) a list of some goals you want to accomplish in the next 3 months.",
 ];
 
 const up = document.querySelector('.up');
