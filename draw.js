@@ -30,7 +30,7 @@ function stop() {
 function draw(event) {
   ctx.beginPath();
   ctx.lineWidth = 5;
-  ctx.lineCap = "round";
+  ctx.lineCap = "round";m
   ctx.strokeStyle = "#ACD3ED";
   ctx.moveTo(coord.x, coord.y);
   reposition(event);
