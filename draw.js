@@ -14,6 +14,7 @@ function resize() {
 resize();
 
 function start(event) {
+  console.log('hi');
   document.addEventListener("mousemove", draw);
   reposition(event);
 }
