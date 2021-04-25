@@ -1,4 +1,5 @@
 const canvas = document.querySelector("#canvas");
+const btn = document.querySelector("button");
 const ctx = canvas.getContext("2d");
 let coord = { x: 0, y: 0 };
 
@@ -38,3 +39,7 @@ function draw(event) {
   ctx.lineTo(coord.x, coord.y);
   ctx.stroke();
 }
+
+btn.addEventListener('click', () => {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+});
