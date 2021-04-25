@@ -64,6 +64,7 @@ function draw(event) {
 }
 
 
+
 btn.addEventListener('click', () => {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 });
